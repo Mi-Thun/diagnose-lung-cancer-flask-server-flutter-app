@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diagnose Lung Cancer from CT-Scan Images</title>
+  </head>
+  <body>
+    <h1>Diagnose Lung Cancer from CT-Scan Images</h1>
+    <form method="post" action="/" enctype="multipart/form-data">
+      <input type="file" name="photo" accept="image/*">
+      <input type="submit" value="Submit">
+    </form>
+    {% if isPost == True %}
+        <p>Result: {{ predicted_class_name }}</p>
+    {% endif %}
+  </body>
+</html>
